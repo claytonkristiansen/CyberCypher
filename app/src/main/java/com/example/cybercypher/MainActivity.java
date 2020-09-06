@@ -2,9 +2,11 @@ package com.example.cybercypher;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import com.example.cybercypher.EncryptActivity;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ((Button)findViewById(R.id.button)).setOnClickListener(new OpenEncrypt());
+        ((Button)findViewById(R.id.button2)).setOnClickListener(new OpenDecrypt());
+
     }
 
     class OpenEncrypt implements View.OnClickListener
@@ -24,21 +28,24 @@ public class MainActivity extends AppCompatActivity
         @Override
         public void onClick(View view)
         {
-            ((Button)view).setText(i.toString());
-            i++;
+            StartNewActivity(EncryptActivity.class);
         }
     }
 
-    class OpenEncrypt implements View.OnClickListener
+    class OpenDecrypt implements View.OnClickListener
     {
         @Override
         public void onClick(View view)
         {
-            ((Button)view).setText(i.toString());
-            i++;
+            StartNewActivity(DecryptActivity.class);
         }
     }
 
+    private void StartNewActivity(Class activity)
+    {
+        Intent intent = new Intent(this, activity);
+        startActivity(intent);
+    }
 
 
 }

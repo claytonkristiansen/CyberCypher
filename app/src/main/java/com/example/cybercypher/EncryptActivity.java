@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class EcryptActivity extends AppCompatActivity
+public class EncryptActivity extends AppCompatActivity
 {
 
     @Override
