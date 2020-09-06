@@ -7,7 +7,7 @@
     android:layout_centerInParent="false"
     android:layout_centerHorizontal="false"
     android:layout_centerVertical="false"
-    android:background="#B3500000"
+    android:background="#B3DADADA"
     tools:context=".MainActivity">
 
     <Button
@@ -39,22 +39,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></Button>
 
-    <EditText
-        android:id="@+id/keyText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="false"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="150dp"
-        android:hint="@string/keyHint" />
-
     <TextView
         android:id="@+id/keyLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@id/keyText"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="-150dp"
-        android:text="@string/keyLabel" />
+        android:layout_marginTop="150dp"
+        android:text="@string/keyLabel"
+        android:textColor="#000000" />
+
+    <Spinner
+        android:id="@+id/encrpytionTypeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/keyLabel"
+        android:layout_centerHorizontal="true"
+        android:hint="Type of encoder: 1, 2, 3, or 4" />
+
+    <EditText
+        android:id="@+id/keyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/encrpytionTypeSpinner"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:background="#00FFFFFF"
+        android:hint="@string/keyHint"
+        android:textColor="#000000"
+        android:textColorHighlight="#000000"
+        android:textColorHint="#000000" />
 
 </android.widget.RelativeLayout>

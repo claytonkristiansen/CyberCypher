@@ -7,5 +7,11 @@
     <string name="encryptHint">Text to be encrypted</string>
     <string name="decryptHint">Text to be decrypted</string>
     <string name="keyHint">Please enter the key</string>
-    <string name="keyLabel">Key:</string>
+    <string name="keyLabel">Select type of encryption:</string>
+    <string-array name="Encryption_Array">
+        <item>Clayton</item>
+        <item>Nishi 1</item>
+        <item>Nishi 2</item>
+        <item>Nishi 3</item>
+    </string-array>
 </resources>
