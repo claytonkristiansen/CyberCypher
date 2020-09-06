@@ -16,14 +16,29 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //((Button)findViewById(R.id.button)).setText("DONKEY");
+        ((Button)findViewById(R.id.button)).setOnClickListener(new OpenEncrypt());
     }
 
-    public void OpenEncrypt(View view)
+    class OpenEncrypt implements View.OnClickListener
     {
-        ((Button)findViewById(R.id.button)).setText(i.toString());
-        i++;
+        @Override
+        public void onClick(View view)
+        {
+            ((Button)view).setText(i.toString());
+            i++;
+        }
     }
+
+    class OpenEncrypt implements View.OnClickListener
+    {
+        @Override
+        public void onClick(View view)
+        {
+            ((Button)view).setText(i.toString());
+            i++;
+        }
+    }
+
 
 
 }
