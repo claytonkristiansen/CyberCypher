@@ -7,10 +7,11 @@
     android:layout_centerInParent="false"
     android:layout_centerHorizontal="false"
     android:layout_centerVertical="false"
+    android:background="#B3500000"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/encryptLaunchButton"
         android:layout_width="200dp"
         android:layout_height="100dp"
         android:layout_centerInParent="false"
@@ -18,24 +19,42 @@
         android:layout_centerVertical="false"
         android:layout_marginStart="152dp"
         android:layout_marginLeft="0dp"
-        android:layout_marginTop="100dp"
-        android:text="Button"
+        android:layout_marginTop="300dp"
+        android:text="@string/encryptLaunchButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></Button>
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/decryptLaunchButton"
         android:layout_width="200dp"
         android:layout_height="100dp"
-        android:layout_below="@id/button"
+        android:layout_below="@id/encryptLaunchButton"
         android:layout_centerInParent="false"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="152dp"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="100dp"
         android:layout_marginRight="0dp"
-        android:text="Button"
+        android:text="@string/decryptLaunchButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"></Button>
+
+    <EditText
+        android:id="@+id/keyText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:hint="@string/keyHint" />
+
+    <TextView
+        android:id="@+id/keyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/keyText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-150dp"
+        android:text="@string/keyLabel" />
 
 </android.widget.RelativeLayout>

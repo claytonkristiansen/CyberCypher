@@ -7,13 +7,12 @@
     tools:context=".EncryptActivity">
 
 
-
     <Button
         android:id="@+id/buttonEncrypt"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="@string/button" />
+        android:text="@string/encryptButton" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -35,6 +34,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="33dp"
+            android:background="#00FFFFFF"
             android:gravity="top|left"
             android:hint="@string/encryptHint"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -50,9 +50,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="5dp"
         android:layout_marginTop="-25dp"
-        android:layout_marginRight="-5dp"
         android:layout_marginBottom="0dp"
         android:background="#8025E415">
 
@@ -67,6 +65,7 @@
             android:layout_marginRight="16dp"
             android:layout_marginBottom="8dp"
             android:gravity="top|left"
+            android:textIsSelectable="true"
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

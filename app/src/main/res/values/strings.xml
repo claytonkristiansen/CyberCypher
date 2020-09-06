@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">CyberCypher</string>
-    <string name="button">Encrypt</string>
+    <string name="encryptButton">Encrypt</string>
+    <string name="decryptButton">Decrypt</string>
+    <string name="encryptLaunchButton">Encrypt</string>
+    <string name="decryptLaunchButton">Decrypt</string>
     <string name="encryptHint">Text to be encrypted</string>
     <string name="decryptHint">Text to be decrypted</string>
+    <string name="keyHint">Please enter the key</string>
+    <string name="keyLabel">Key:</string>
 </resources>

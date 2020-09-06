@@ -7,13 +7,12 @@
     tools:context=".DecryptActivity">
 
 
-
     <Button
         android:id="@+id/buttonDecrypt"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="@string/button" />
+        android:text="@string/" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -35,8 +34,10 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="33dp"
+            android:background="#00FFFFFF"
             android:gravity="top|left"
             android:hint="@string/decryptHint"
+            android:textIsSelectable="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
@@ -52,10 +53,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginLeft="5dp"
         android:layout_marginTop="-25dp"
-        android:layout_marginRight="-5dp"
-        android:layout_marginBottom="0dp"
         android:background="#80E41010">
 
         <TextView
